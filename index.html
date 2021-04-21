@@ -1,0 +1,2660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .navbar {
+            position: fixed;
+            top: 0;
+            z-index: 99;
+            width: 100%;
+        }
+
+        body {
+            background-color: #ECECEC;
+        }
+
+
+        @media (min-width: 1200px) {
+
+
+
+            .navbar-expand-sm .navbar-nav {
+                background-color: rgb(255, 255, 255);
+                font-size: 0.9rem;
+                letter-spacing: 0.2em;
+                color: #333;
+                position: relative;
+                padding: auto;
+                font-family: "Karla", sans-serif;
+
+            }
+
+            #navbarSupportedContent {
+                position: absolute;
+                right: 70px;
+                padding-top: 8px;
+
+
+            }
+
+            .header-navi .item.fa .link {
+                display: block;
+                width: 20px;
+                height: 20px;
+            }
+
+            .navbar-brand img {
+                width: 240px;
+            }
+
+            .navbar-light .navbar-nav .nav-link {
+
+                padding-right: 40px;
+                /* border: 1px solid red; */
+            }
+
+            .navbar-light .navbar-nav .nav-link-xl img {
+                padding-left: 20px;
+
+
+            }
+
+            .navbar-light .navbar-nav .nav-linksm {
+                display: none;
+            }
+
+
+            .carouselExampleIndicators-sm {
+                display: none;
+            }
+
+
+
+            .carousel-indicators {
+                /* position: absolute; */
+                bottom: 10px;
+                left: 50%;
+                z-index: 15;
+                width: 60%;
+                padding-left: 1000px;
+                margin-left: -10%;
+                text-align: right;
+                /* list-style: none; */
+                position: absolute;
+
+            }
+
+            .carousel-indicators li {
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                margin: 6px;
+                /* text-indent: -999px; */
+                /* cursor: pointer; */
+                /* background-color: #000 \9; */
+                /* background-color: rgba(0, 0, 0, 0); */
+                border: 1px solid #fff;
+                transform: rotate(45deg);
+                flex-direction: column;
+            }
+
+
+
+            .about-inne {
+                color: #000;
+                font-family: "-apple-system", BlinkMacSystemFont, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "メイリオ", "Hiragino Kaku Gothic ProN", "MS PGothic", Osaka, "sans-serif";
+                padding-top: 107px;
+                font-size: 1.4rem;
+                line-height: 2.28;
+                color: #444;
+                background-color: #ECECEC;
+            }
+
+            .about {
+                width: 81.25%;
+                margin: 0 auto;
+                padding-bottom: 83px;
+                display: flex;
+                justify-content: space-between;
+                -webkit-box-pack: justify;
+
+            }
+
+            .about-title {
+                font-family: "Karla", sans-serif;
+                font-size: 20px;
+                width: 81.25%;
+                margin: 0 auto;
+            }
+
+            .about-left {
+                color: #444;
+                font-size: 14px;
+                padding-top: 43px;
+                width: 140%;
+                margin-right: 125px;
+
+            }
+
+            .left-top {
+                padding: 0px 0px 30px;
+                font-size: 1.2rem;
+                line-height: 2.1;
+                letter-spacing: 0.26em;
+                margin: 0;
+            }
+
+            .left-down {
+                display: block;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+            }
+
+            .about-right {
+                color: #444;
+                padding-top: 43px;
+
+            }
+
+            .right-top {
+                font-size: 15px;
+                padding-bottom: 33px;
+                line-height: 2.28;
+                color: #444;
+            }
+
+            .right-down {
+                font-size: 13px;
+                color: #444;
+            }
+
+            .about-inne .box1 {
+                width: 1720px;
+                height: auto;
+                /* transform: translateX(180px); */
+                /* position: absolute; */
+                float: right;
+                margin-bottom: 10px;
+                object-fit: none;
+
+                width: 1720px;
+
+
+            }
+
+            .about-inne .box2 {
+                display: none;
+            }
+
+            .history {
+                width: 81.25%;
+                margin: 0 auto;
+
+                justify-content: space-between;
+                -webkit-box-pack: justify;
+                padding-bottom: 120px;
+
+            }
+
+            .history-up {
+                padding-top: 81px;
+                color: #444;
+            }
+
+            .up-title {
+                font-size: 20px;
+                padding-bottom: 20px;
+            }
+
+            .up-text {
+                font-size: 14px;
+            }
+
+            .history-down {
+                padding-top: 41px;
+                color: #444;
+            }
+
+            .down-title {
+                font-size: 16px;
+                padding-bottom: 12px;
+            }
+
+            .down-text {
+                font-size: 13px;
+            }
+
+            .box-works {
+                background-image: url(./image/works_back.jpg);
+                background-size: cover;
+                width: 100%;
+                height: 34.375vw;
+
+
+            }
+
+            .box-works p {
+                padding-top: 350px;
+                font-family: "Karla", sans-serif;
+                font-size: 30px;
+                color: #fff;
+                letter-spacing: 0.2em;
+                margin: 0;
+                text-align: center;
+
+            }
+
+            .works {
+                padding-top: 82px;
+                padding-bottom: 96px;
+                background-color: #ECECEC;
+            }
+
+            .works-text {
+                width: 81.25%;
+                margin: 0 auto;
+                display: flex;
+
+
+            }
+
+            .works-text-left {
+                /* padding-bottom: 26px; */
+                font-family: "-apple-system", BlinkMacSystemFont, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "メイリオ", "Hiragino Kaku Gothic ProN", "MS PGothic", Osaka, "sans-serif";
+                box-sizing: border-box;
+                width: 47.1%;
+
+            }
+
+            .works-text-left .left-top {
+                line-height: 2.1;
+                letter-spacing: 0.26em;
+                font-size: 20px;
+                padding-bottom: 20px;
+            }
+
+            .works-text-left .left-down {
+                letter-spacing: 0.2em;
+                line-height: 2.28;
+                color: #444;
+                font-size: 14px;
+            }
+
+            .works-text-right {
+                font-family: "-apple-system", BlinkMacSystemFont, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "メイリオ", "Hiragino Kaku Gothic ProN", "MS PGothic", Osaka, "sans-serif";
+                box-sizing: border-box;
+                width: 47.1%;
+                transform: translateX(20%);
+
+
+            }
+
+            .works-text-right .right-top {
+                font-size: 14px;
+                color: #777;
+                line-height: 2.76;
+                padding-bottom: 45px;
+                letter-spacing: 0.26em;
+            }
+
+            .works-text-right .right-down {
+                font-size: 12px;
+                color: #777;
+                letter-spacing: 0.2em;
+
+            }
+
+
+
+            .material-box {
+                padding-bottom: 250px;
+            }
+
+            .material-img {
+                position: relative;
+            }
+
+            .material-img-img {
+                width: 65.625%;
+                margin-left: 0;
+                margin-right: auto;
+            }
+
+            .material-img-img img {
+                width: 100%;
+                height: auto;
+            }
+
+            .material-img-text {
+                position: absolute;
+                right: 0;
+                z-index: 1;
+                bottom: -8.3%;
+                font-family: "-apple-system", BlinkMacSystemFont, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "メイリオ", "Hiragino Kaku Gothic ProN", "MS PGothic", Osaka, "sans-serif";
+                background-color: #fff;
+                width: 940px;
+                padding-top: 100px;
+                padding-bottom: 85px;
+            }
+
+            .material-text-top {
+                width: 70.3%;
+                margin: 0 auto;
+                letter-spacing: 0.2em;
+                padding-bottom: 30px;
+                font-size: 14px;
+                line-height: 2.28;
+            }
+
+            .material-text-down {
+                font-size: 12px;
+                line-height: 2.54;
+                width: 70.3%;
+                margin: 0 auto;
+                letter-spacing: 0.15em;
+                color: #777;
+            }
+
+            .technique-box {
+                padding-bottom: 264px;
+                position: relative;
+
+            }
+
+            .technique-img {
+                position: relative;
+            }
+
+            .technique-img-img {
+                width: 65.625%;
+                margin-right: 0;
+                margin-left: auto;
+            }
+
+            .technique-img-img img {
+                width: 100%;
+                height: auto;
+            }
+
+            .technique-img-text {
+                position: absolute;
+                left: 0;
+                z-index: 1;
+                bottom: -8.3%;
+                font-family: "-apple-system", BlinkMacSystemFont, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "メイリオ", "Hiragino Kaku Gothic ProN", "MS PGothic", Osaka, "sans-serif";
+                background-color: #fff;
+                width: 940px;
+                padding-top: 100px;
+                padding-bottom: 85px;
+            }
+
+            .technique-text-top {
+                width: 70.3%;
+                margin: 0 auto;
+                letter-spacing: 0.2em;
+                padding-bottom: 30px;
+                font-size: 14px;
+                line-height: 2.28;
+            }
+
+            .technique-text-down {
+                font-size: 12px;
+                line-height: 2.54;
+                width: 70.3%;
+                margin: 0 auto;
+                letter-spacing: 0.15em;
+                color: #777;
+            }
+
+            .material-text {
+                position: absolute;
+                display: flex;
+                z-index: 10;
+                transform: translateY(0px);
+                opacity: 1;
+                transform: translateX(1700px);
+            }
+
+            .material-box .ja {
+                font-size: 22px;
+                line-height: 1.3;
+                letter-spacing: 0.26em;
+                padding-right: 2px;
+                font-weight: normal;
+                font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+                color: #444;
+            }
+
+            .material-box .column {
+                display: block;
+            }
+
+            .material-box .column.top {
+                margin-top: 4px;
+                margin-bottom: -18px;
+                transform: rotate(90deg) translateY(2px);
+            }
+
+            .material-box .column.bottom {
+                margin-top: -5px;
+                margin-bottom: 0px;
+                transform: rotate(90deg) translateY(2px);
+
+            }
+
+            .material-box .en {
+                font-size: 12px;
+                letter-spacing: 0.15em;
+                color: #777;
+                position: absolute;
+                right: -35px;
+                top: 20px;
+                transform: rotate(90deg);
+                line-height: 2.28;
+
+            }
+
+
+
+            .material-text1 {
+                position: absolute;
+                display: flex;
+                z-index: 10;
+
+                opacity: 1;
+                transform: translate(200px, 1250px);
+            }
+
+            .material-box .ja1 {
+                font-size: 22px;
+                line-height: 1.3;
+                letter-spacing: 0.26em;
+                padding-right: 2px;
+                font-weight: normal;
+                font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+                color: #444;
+            }
+
+            .material-box .column1 {
+                display: block;
+            }
+
+
+
+            .material-box .en1 {
+                font-size: 12px;
+                letter-spacing: 0.15em;
+                color: #777;
+                position: absolute;
+                right: -35px;
+                top: 20px;
+                transform: rotate(90deg);
+                line-height: 2.28;
+
+            }
+
+            .box1-1 {
+                width: 1720px;
+                height: auto;
+                transform: translateX(0px);
+                padding-bottom: 100px;
+                object-fit: none;
+            }
+
+            .box2-2 {
+                display: none;
+            }
+
+            .box1-1-text {
+                display: flex;
+                font-weight: normal;
+                font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+                color: rgb(255, 255, 255);
+                padding-top: 10px;
+                padding-right: 10px;
+                z-index: 50;
+                background-color: rgba(19, 19, 19, 0.164);
+
+            }
+
+            .box1-1-text .left {
+                padding-right: 50px;
+
+
+            }
+
+            .box1-1-text .left .ja {
+                font-size: 24px;
+                width: 200px;
+            }
+
+            .box1-1-text .left .en {
+                font-size: 12px;
+            }
+
+            .box1-1-text .right .ja {
+                font-size: 14px;
+                text-align: left;
+            }
+
+            .box1-1-text .right .en {
+                font-size: 12px;
+                text-align: left;
+            }
+
+            .box2-2-carousel {
+                display: none;
+            }
+
+            .section.works2 {
+                padding-bottom: 14.53%;
+            }
+
+            .section.works2 .img-box {
+                width: 81.25%;
+                margin: 0 auto;
+                transform: translateY(0px);
+                opacity: 1;
+            }
+
+            .picture-1 {
+                width: 500px
+                    /* display: flex; */
+                    /* -webkit-box-pack: end; */
+
+                    /* justify-content: flex-end; */
+
+            }
+
+            .section.works2 .img-1 {
+                padding-bottom: 13px;
+            }
+
+            .section.works2 .img-1 img {
+                object-fit: cover;
+                width: 500px;
+            }
+
+            .section.works2 .picture-1 p {
+
+                font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+                font-size: 14px;
+                font-weight: 400;
+
+                color: #444444;
+                text-align: left;
+                letter-spacing: 0.2em;
+                padding-bottom: 30px;
+                line-height: 2.28;
+                margin: 0;
+            }
+
+            .section.works2 h4 {
+                font-size: 17px;
+                font-family: "Karla", sans-serif;
+                margin: 0;
+                padding: 5px 0;
+                font-weight: normal;
+                color: #000000;
+                letter-spacing: 0.2em;
+            }
+
+            .picture-2 {
+                width: 62.5%;
+                margin-left: auto;
+                margin-right: 0;
+                position: relative;
+                margin-top: -13.59%;
+            }
+
+            .picture-2-1 {
+                display: block;
+                width: 70.76%;
+                margin-left: auto;
+                position: relative;
+            }
+
+            .picture-2-box {
+
+                width: auto;
+            }
+
+            .picture-2 .onlineshop-box {
+                /* float: right; */
+                width: 675.53px;
+                height: 1072.03px;
+                /* display: block; */
+                background-image: url(./image/onlineshop1.jpg);
+                background-size: cover;
+                margin-left: auto;
+
+                text-align: center;
+                color: rgb(255, 255, 255);
+                line-height: 536px;
+                font-size: 14px;
+                font-family: "Karla", sans-serif;
+                letter-spacing: 0.2em;
+
+            }
+
+            .picture-2 button {
+                width: 150px;
+                height: 25px;
+                color: rgb(0, 0, 0);
+                line-height: 5px;
+                font-size: 14px;
+                font-family: "Karla", sans-serif;
+                letter-spacing: 0.2em;
+                text-align: center;
+                transform: translateY(280px);
+            }
+
+            .picture-2 .picture-2-box img {
+                position: absolute;
+                left: -41.3%;
+                bottom: 13%;
+                z-index: 3;
+                width: 50%;
+                height: auto;
+                transform: translateY(80px);
+                /* transform: translateX(-500px); */
+                /* float: right; */
+            }
+
+            .picture-3 {
+                width: 28.9%;
+                margin-top: -8.2%;
+            }
+
+            .picture-3 img {
+                width: 100%;
+                height: auto;
+                vertical-align: bottom;
+            }
+
+            .picture-4 {
+                width: 81.25%;
+                margin: 0 auto;
+                margin-right: 0;
+                margin-top: -7.26%;
+                margin-left: auto;
+                margin-bottom: 12.48%;
+            }
+
+            .picture-4 img {
+                width: 46.15%;
+                display: block;
+                margin-left: auto;
+                vertical-align: bottom;
+            }
+
+            .picture-5 {
+                width: 72.65%;
+                margin-left: auto;
+                position: relative;
+            }
+
+            .picture-5-1 {
+                width: 27.41%;
+                height: auto;
+                position: absolute;
+                left: -19.35%;
+                top: -35.29%;
+                z-index: -99;
+            }
+
+            .picture-5-2 {
+                width: 100%;
+                height: auto;
+                z-index: 50;
+            }
+
+
+
+
+
+            .company {
+                width: 76.56%;
+                margin: 0 auto;
+                display: flex;
+                padding-bottom: calc(15.625% + 60px);
+            }
+
+            /* .company .company-img-big {
+                width: 50%;
+                min-height: 0%;
+            } */
+
+            /* .company .company-img-big img {
+                width: 100%;
+                height: auto;
+            } */
+
+            .company .company-img-sm {
+                display: flex;
+                width: 100%;
+                /* position: absolute; */
+                top: 0;
+                left: -12.5%;
+                /* margin-right: 100px; */
+                transform: translateX(-150px);
+            }
+
+            .company .left {
+                /* width: 50%; */
+            }
+
+            .company .left img {
+                width: 100%;
+                height: auto;
+                vertical-align: middle;
+                border-style: none;
+            }
+
+            .company .right img {
+                width: 100%;
+                height: auto;
+                vertical-align: middle;
+                border-style: none;
+            }
+
+            .company .name {
+                padding-top: 10px;
+            }
+
+            .company .name .en {
+                font-size: 12px;
+                letter-spacing: 0.2em;
+                font-family: "Karla", sans-serif;
+                color: #444444;
+                margin: 0;
+            }
+
+            .company .name .ja {
+                letter-spacing: 0.2em;
+                margin-top: -2px;
+                font-size: 14px;
+                color: #444444;
+                font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+            }
+
+            .company-text {
+                width: 45.91%;
+                margin-left: auto;
+                margin-right: 0;
+                font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+            }
+
+            .company-text h2 {
+                padding-bottom: 26px;
+                font-size: 20px;
+                color: #444444;
+                letter-spacing: 0.2em;
+                font-family: "Karla", sans-serif;
+            }
+
+            .company-text-top {
+                font-size: 13px;
+                line-height: 2.9;
+                letter-spacing: 0.2em;
+                padding-bottom: 35px;
+                flex-wrap: wrap;
+                display: flex;
+                margin: 0;
+                color: #777777;
+                font-weight: 400;
+
+
+
+            }
+
+            .company-text-top dt {
+                width: 150px;
+            }
+
+            .company-text-top dd {
+                width: calc(100% - 150px);
+            }
+
+            .company-text-down {
+                font-size: 11px;
+                line-height: 3.18;
+                letter-spacing: 0.15em;
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0;
+                color: #777777;
+
+            }
+
+            .company-text-down dt {
+                width: 150px;
+            }
+
+            .company-text-down dd {
+                margin-bottom: .5rem;
+                margin-left: 0;
+                width: calc(100% - 150px);
+            }
+
+            .contact {
+                display: flex;
+                margin: 0;
+                padding: 0;
+                background-color: #242c2e;
+            }
+
+            .contact .contact-text {
+                color: #ddd;
+                width: 62.5%;
+                padding-top: 121px;
+                padding-bottom: 162px;
+                font-family: "Karla", sans-serif;
+                font-weight: normal;
+                display: flex;
+            }
+
+            .contact .contact-text-box {
+                width: 67.5%;
+                margin: 0 auto;
+                margin-left: 200px;
+                padding-right: 200px;
+
+            }
+
+            .contact h2 {
+                padding-bottom: 26px;
+                font-size: 2px;
+                letter-spacing: 0.2em;
+            }
+
+            .contact .ja {
+                font-size: 13px;
+                line-height: 2.76;
+                letter-spacing: 0.2em;
+            }
+
+            .contact .en {
+                font-size: 11px;
+                line-height: 2.5;
+                letter-spacing: 0.15em;
+                padding-bottom: 53px;
+            }
+
+            .contact dt {
+                padding-top: 41px;
+                font-size: 14px;
+                font-family: "Karla", sans-serif;
+            }
+
+            .contact dd {
+                border-bottom: 1px solid #3f4648;
+                padding-top: 30px;
+
+            }
+
+
+
+            .contact .message {
+                height: 180px;
+                background-color: #30383a;
+            }
+
+            .contact dt.message-title {
+                padding-bottom: 5px;
+            }
+
+            .contact .submit {
+                padding-top: 56px;
+            }
+
+            .contact button {
+                width: 230px;
+                font-size: 13px;
+                letter-spacing: 0.2em;
+                color: #fff;
+                text-align: left;
+            }
+
+            .contact-img-pc {}
+
+            .contact-img-pc img {
+                /* width: 165%; */
+                transform: scale(1.9);
+                transform-origin: top;
+            }
+
+            .contact-img-sp {
+                display: none;
+            }
+
+            .footer {
+                width: 100%;
+                height: 80px;
+                position: absolute;
+                background-color: #373E40;
+            }
+
+            .footer p {
+                font-size: 11px;
+                letter-spacing: 0.12em;
+                color: #fff;
+                font-family: "Karla", sans-serif;
+                line-height: 80px;
+                text-align: center;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media (max-width: 575.98px) {
+
+
+            .navbar-expand-sm .navbar-nav {
+                padding: 208px 35px;
+                background-color: #242c2e;
+                border: none;
+                font-size: 18px;
+                text-align: right;
+                font-family: "Karla", sans-serif;
+                letter-spacing: 5px;
+            }
+
+            .navbar-toggler {
+
+
+                padding: 15px 15px;
+                font-size: 1rem;
+                line-height: 0;
+                background-color: rgb(240, 240, 240);
+                border: 0px;
+                border-radius: 0rem;
+                /* margin-right: 25px; */
+
+            }
+
+            nav.navbar.navbar-expand-lg.navbar-expand-sm.navbar-light.navbar-fixed-top {
+                padding: 0px;
+
+
+            }
+
+            .navbar-expand-sm .navbar-nav .nav-link {
+                color: rgb(255, 255, 255);
+                padding: 15px 0;
+            }
+
+            .navbar-expand-sm .navbar-nav .active>.nav-link {
+                color: rgb(255, 255, 255);
+            }
+
+            .navbar-expand-sm a:visited {
+                color: rgb(255, 255, 255);
+            }
+
+            .navbar-expand-sm {
+                border: none;
+                background-color: rgb(209, 209, 209);
+                border-radius: 0;
+                padding: .5rem .75rem;
+            }
+
+            .navbar-brand img {
+                width: 180px;
+
+                padding-left: 14px;
+                padding-top: 5px;
+            }
+
+            .navbar-light .navbar-nav .nav-link-xl {
+                display: none;
+            }
+
+            .carouselExampleIndicators-xl {
+                display: none;
+            }
+
+            .carouselExampleIndicators-sm img {
+                width: auto;
+                height: 812px;
+
+            }
+
+
+            .carousel-indicators {
+                /* position: absolute; */
+                bottom: 10px;
+                left: 50%;
+                z-index: 15;
+                width: 60%;
+                padding-left: 150px;
+                margin-left: -10%;
+                text-align: right;
+                /* list-style: none; */
+                position: absolute;
+
+            }
+
+            .carousel-indicators li {
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                margin: 6px;
+                /* text-indent: -999px; */
+                /* cursor: pointer; */
+                /* background-color: #000 \9; */
+                /* background-color: rgba(0, 0, 0, 0); */
+                border: 1px solid #fff;
+                transform: rotate(45deg);
+                flex-direction: column;
+
+
+            }
+
+            .about-inne {
+                color: #000;
+                font-family: "-apple-system", BlinkMacSystemFont, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "メイリオ", "Hiragino Kaku Gothic ProN", "MS PGothic", Osaka, "sans-serif";
+                padding-top: 51px;
+                font-size: 1.4rem;
+                line-height: 2.28;
+                color: #444;
+                background-color: #ECECEC;
+
+            }
+
+            .about {
+                width: 84.375%;
+                margin: 0 auto;
+                padding-bottom: 47px;
+
+                justify-content: space-between;
+                -webkit-box-pack: justify;
+
+            }
+
+            .about-title {
+                font-family: "Karla", sans-serif;
+                font-size: 20px;
+                width: 84.375%;
+                margin: 0 auto;
+            }
+
+            .about-left {
+                color: #444;
+                font-size: 14px;
+                padding-top: 10px;
+
+
+            }
+
+            .left-top {
+                padding: 0px 0px 22px;
+                font-size: 1.2rem;
+                line-height: 2.1;
+                letter-spacing: 0.26em;
+                margin: 0;
+            }
+
+            .left-down {
+                display: block;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+            }
+
+            .about-right {
+                color: #444;
+                padding-top: 34px;
+
+            }
+
+            .right-top {
+                font-size: 15px;
+                padding-bottom: 18px;
+                line-height: 2.28;
+            }
+
+            .right-down {
+                font-size: 12px;
+            }
+
+            .about-inne .box1 {
+                display: none;
+            }
+
+            .about-inne .box2 {
+                width: 84.375%;
+                margin: 0 auto;
+
+            }
+
+            .history {
+                width: 81.25%;
+                margin: 0 auto;
+
+                justify-content: space-between;
+                -webkit-box-pack: justify;
+                padding-bottom: 53px;
+
+            }
+
+            .history-up {
+                padding-top: 37px;
+                color: #444;
+            }
+
+            .up-title {
+                font-size: 18px;
+                padding-bottom: 15px;
+            }
+
+            .up-text {
+                font-size: 14px;
+            }
+
+            .history-down {
+                padding-top: 31px;
+                color: #444;
+            }
+
+            .down-title {
+                font-size: 15px;
+                padding-bottom: 12px;
+            }
+
+            .down-text {
+                font-size: 13px;
+            }
+
+            .box-works {
+                width: 92.1875%;
+                position: relative;
+                margin-left: auto;
+                height: 60vw;
+
+                background-image: url(./image/works_back.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+
+            }
+
+            .box-works p {
+                padding-top: 100px;
+                font-family: "Karla", sans-serif;
+                font-size: 25px;
+                color: #fff;
+                letter-spacing: 0.2em;
+                margin: 0;
+                text-align: center;
+
+
+            }
+
+            .works {
+                padding-top: 41px;
+                padding-bottom: 101px;
+                background-color: #ECECEC;
+            }
+
+            .works-text {
+                width: 84.375%;
+                margin: 0 auto;
+                display: block;
+
+
+            }
+
+            .works-text-left {
+                padding-bottom: 26px;
+                font-family: "-apple-system", BlinkMacSystemFont, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "メイリオ", "Hiragino Kaku Gothic ProN", "MS PGothic", Osaka, "sans-serif";
+
+                width: 100%;
+
+            }
+
+            .works-text-left .left-top {
+                line-height: 1.94;
+                letter-spacing: 0.26em;
+                font-size: 18px;
+                padding-bottom: 25px;
+            }
+
+            .works-text-left .left-down {
+                letter-spacing: 0.2em;
+                line-height: 2.28;
+                color: #444;
+                font-size: 14px;
+            }
+
+            .works-text-right {
+                font-family: "-apple-system", BlinkMacSystemFont, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "メイリオ", "Hiragino Kaku Gothic ProN", "MS PGothic", Osaka, "sans-serif";
+                box-sizing: border-box;
+
+                width: 100%;
+
+
+            }
+
+            .works-text-right .right-top {
+                font-size: 13px;
+                color: #777;
+                line-height: 2;
+                padding-bottom: 17px;
+                letter-spacing: 0.2em;
+            }
+
+            .works-text-right .right-down {
+                font-size: 12px;
+                color: #777;
+
+
+                line-height: 2.54;
+                letter-spacing: 0.15em;
+            }
+
+
+
+            .material-box {
+                padding-bottom: 126px;
+            }
+
+            .material-img {
+                position: relative;
+            }
+
+            .material-img-img {
+                width: 100%;
+                margin-left: 0;
+                margin-right: auto;
+            }
+
+            .material-img-img img {
+                width: 100%;
+                height: auto;
+                vertical-align: bottom;
+            }
+
+            .material-img-text {
+                z-index: 1;
+                position: relative;
+                width: 92.1875%;
+                margin-left: auto;
+                margin-top: -50px;
+                font-family: "-apple-system", BlinkMacSystemFont, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "メイリオ", "Hiragino Kaku Gothic ProN", "MS PGothic", Osaka, "sans-serif";
+                background-color: #fff;
+                width: 350px;
+                padding-top: 33px;
+                padding-bottom: 38px;
+            }
+
+            .material-text-top {
+                width: 82.75%;
+                padding-bottom: 13px;
+                line-height: 2;
+
+                color: #777;
+                font-size: 14px;
+                margin: 0 auto;
+                letter-spacing: 0.2em;
+            }
+
+            .material-text-down {
+                width: 82.75%;
+                font-size: 12px;
+                line-height: 2.54;
+
+                margin: 0 auto;
+                letter-spacing: 0.15em;
+                color: #777;
+            }
+
+            .technique-box {
+                padding-bottom: 70px;
+            }
+
+            .technique-img {
+                position: relative;
+            }
+
+            .technique-img-img {
+                width: 100%;
+                margin-left: 0;
+                margin-right: auto;
+            }
+
+            .technique-img-img img {
+                width: 100%;
+                height: auto;
+                vertical-align: bottom;
+            }
+
+
+            .technique-img-text {
+                z-index: 1;
+                position: relative;
+                width: 92.1875%;
+                margin-right: auto;
+                margin-top: -50px;
+                font-family: "-apple-system", BlinkMacSystemFont, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "メイリオ", "Hiragino Kaku Gothic ProN", "MS PGothic", Osaka, "sans-serif";
+                background-color: #fff;
+                width: 350px;
+                padding-top: 33px;
+                padding-bottom: 38px;
+            }
+
+            .technique-text-top {
+                width: 82.75%;
+                padding-bottom: 13px;
+                line-height: 2;
+
+                color: #777;
+                font-size: 14px;
+                margin: 0 auto;
+                letter-spacing: 0.2em;
+            }
+
+            .technique-text-down {
+                width: 82.75%;
+                font-size: 12px;
+                line-height: 2.54;
+
+                margin: 0 auto;
+                letter-spacing: 0.15em;
+                color: #777;
+            }
+
+            .material-text {
+                position: absolute;
+                display: flex;
+                z-index: 10;
+                transform: translateY(0px);
+                opacity: 1;
+                transform: translateX(320px);
+            }
+
+            .material-box .ja {
+                font-size: 22px;
+                line-height: 1.3;
+                letter-spacing: 0.26em;
+                padding-right: 2px;
+                font-weight: normal;
+                font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+                color: rgb(255, 255, 255);
+            }
+
+            .material-box .column {
+                display: block;
+            }
+
+            .material-box .column.top {
+                margin-top: 4px;
+                margin-bottom: -18px;
+                transform: rotate(90deg) translateY(2px);
+            }
+
+            .material-box .column.bottom {
+                margin-top: -5px;
+                margin-bottom: 0px;
+                transform: rotate(90deg) translateY(2px);
+
+            }
+
+            .material-box .en {
+                font-size: 12px;
+                letter-spacing: 0.15em;
+                color: rgb(255, 255, 255);
+                position: absolute;
+                right: -35px;
+                top: 20px;
+                transform: rotate(90deg);
+                line-height: 2.28;
+
+            }
+
+
+
+            .material-text1 {
+                position: absolute;
+                display: flex;
+                z-index: 10;
+
+                opacity: 1;
+                transform: translate(50px, 980px);
+            }
+
+            .material-box .ja1 {
+                font-size: 22px;
+                line-height: 1.3;
+                letter-spacing: 0.26em;
+                padding-right: 2px;
+                font-weight: normal;
+                font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+                color: #444;
+            }
+
+            .material-box .column1 {
+                display: block;
+            }
+
+
+
+            .material-box .en1 {
+                font-size: 12px;
+                letter-spacing: 0.15em;
+                color: #777;
+                position: absolute;
+                right: -35px;
+                top: 20px;
+                transform: rotate(90deg);
+                line-height: 2.28;
+
+            }
+
+
+            .box1-1 {
+                display: none;
+            }
+
+            .box2-2 {
+                width: 84.375%;
+                margin: 0 auto;
+
+            }
+
+            .box2-2-carousel {
+                width: 84.375%;
+                margin: 0 auto;
+                font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+                color: #444;
+            }
+
+            .box2-2-carousel .carousel-title {
+                padding-top: 50px;
+            }
+
+            .box2-2-carousel .carousel-title-top {
+                font-size: 20px;
+                padding-bottom: 10px;
+                letter-spacing: 0.2em;
+                line-height: 1.9;
+            }
+
+            .box2-2-carousel .carousel-title-down {
+                font-size: 12px;
+                padding-top: -5px;
+                padding-bottom: 19px;
+                letter-spacing: 0.2em;
+                line-height: 1.9;
+            }
+
+            .box2-2-carousel .carousel-text {
+                padding-bottom: 27px;
+            }
+
+            .box2-2-carousel .carousel-text-top {
+                font-size: 13px;
+                padding-bottom: 20px;
+                letter-spacing: 0.2em;
+                line-height: 2.28;
+            }
+
+            .box2-2-carousel .carousel-text-down {
+                font-size: 12px;
+                line-height: 2.54;
+                letter-spacing: 0.15em;
+                color: #777;
+            }
+
+
+
+
+
+            .section.works2 {
+                padding-bottom: 14.53%;
+            }
+
+            .section.works2 .img-box {
+                width: 84.375%;
+                margin: 0 auto;
+
+
+            }
+
+
+
+            .section.works2 .picture-img {
+                width: 100%;
+            }
+
+            .section.works2 .img-1 {
+                padding-bottom: 13px;
+            }
+
+            .section.works2 .img-1 img {
+                /* object-fit: cover; */
+                width: 100%;
+
+            }
+
+
+
+
+            .section.works2 .picture-1 p {
+
+                font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+                font-size: 14px;
+                font-weight: 400;
+
+                color: #444444;
+                text-align: left;
+                letter-spacing: 0.2em;
+                padding-bottom: 30px;
+                line-height: 2.28;
+                margin: 0;
+            }
+
+            .section.works2 h4 {
+                font-size: 17px;
+                font-family: "Karla", sans-serif;
+                margin: 0;
+                padding: 5px 0;
+                font-weight: normal;
+                color: #000000;
+                letter-spacing: 0.2em;
+            }
+
+
+
+
+            .picture-2 {
+                width: 62.5%;
+                margin-left: auto;
+                margin-right: 0;
+                position: relative;
+                padding-top: calc(27.4% + 88px);
+            }
+
+            .picture-2-1 {
+                width: 47.84%;
+                top: -28.78%;
+                left: -18.66%;
+            }
+
+            .picture-2-box {
+
+                width: auto;
+            }
+
+            .picture-2 .onlineshop-box {
+                /* float: right; */
+                width: 215.83px;
+                height: 342.5px;
+                /* display: block; */
+                background-image: url(./image/onlineshop1.jpg);
+                background-size: cover;
+                margin-left: auto;
+
+                text-align: center;
+                color: rgb(255, 255, 255);
+                line-height: 536px;
+                font-size: 14px;
+                font-family: "Karla", sans-serif;
+                letter-spacing: 0.2em;
+                transform: translateX(-30px);
+
+
+            }
+
+            .picture-2 button {
+                width: 130px;
+                height: 25px;
+                color: rgb(0, 0, 0);
+                line-height: 5px;
+                font-size: 12px;
+                font-family: "Karla", sans-serif;
+                letter-spacing: 0.2em;
+                text-align: center;
+                transform: translateY(-100px);
+            }
+
+            .picture-2 .picture-2-box img {
+                position: absolute;
+                left: -41.3%;
+                bottom: 13%;
+                z-index: 3;
+                width: 50%;
+                height: auto;
+                transform: translateY(-240px);
+                /* transform: translateX(-500px); */
+                /* float: right; */
+            }
+
+
+            .picture-3 {
+                margin-top: 107px;
+                width: 53.125%;
+                padding-bottom: 90px;
+            }
+
+            .picture-3 img {
+                width: 100%;
+                height: auto;
+                vertical-align: bottom;
+            }
+
+            .picture-4 {
+                width: 84.375%;
+                margin: 0 auto;
+            }
+
+            .picture-4 img {
+                width: 85.185%;
+            }
+
+            .picture-5 {
+                margin-top: calc(17.75% + 76px);
+                width: 81.25%;
+                position: relative;
+                margin-left: auto;
+                position: relative;
+            }
+
+            .picture-5-1 {
+                width: 32.3%;
+                top: -40%;
+                left: -13.4%;
+                height: auto;
+                position: absolute;
+                z-index: -50;
+            }
+
+            .picture-5-2 {
+                width: 100%;
+                height: auto;
+                z-index: 50;
+            }
+
+            .company {
+                width: 84.375%;
+                margin: 0 auto;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: reverse;
+                display: flex;
+                flex-wrap: wrap;
+                padding-bottom: 67px;
+                flex-direction: column-reverse;
+
+            }
+
+            .company-img-big {
+                width: 100%;
+            }
+
+            .company-img-sm {
+                width: 100%;
+                position: static;
+                display: block;
+                top: 0;
+                left: -12.5%;
+            }
+
+            .company .left {
+                width: 56.25%;
+                margin: 0 auto;
+                padding-bottom: 32px;
+            }
+
+            .company .right {
+                width: 56.25%;
+                margin: 0 auto;
+
+            }
+
+            .company .right img {
+                width: 100%;
+                height: auto;
+            }
+
+            .company .left img {
+                width: 100%;
+                height: auto;
+            }
+
+            .company .name {
+                padding-top: 10px;
+            }
+
+            .company .name .en {
+                font-size: 12px;
+                letter-spacing: 0.2em;
+                font-family: "Karla", sans-serif;
+            }
+
+            .company .name .ja {
+                letter-spacing: 0.2em;
+                margin-top: -2px;
+            }
+
+            .company-text {
+                width: 100%;
+                padding-bottom: 61px;
+                margin-left: auto;
+                margin-right: 0;
+                font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+            }
+
+            .company-text h2 {
+                padding-bottom: 18px;
+                font-size: 18px;
+                color: #444444;
+                letter-spacing: 0.2em;
+                font-family: "Karla", sans-serif;
+            }
+
+            .company-text-top {
+                font-size: 13px;
+                line-height: 2.9;
+                letter-spacing: 0.2em;
+                padding-bottom: 22px;
+                flex-wrap: wrap;
+                display: flex;
+                margin: 0;
+                color: #777777;
+                /* font-weight: 400; */
+
+
+
+            }
+
+            .company-text-top dt {
+                width: 150px;
+            }
+
+            .company-text-top dd {
+                width: calc(100% - 150px);
+            }
+
+            .company-text-down {
+                font-size: 11px;
+                line-height: 3.18;
+                letter-spacing: 0.15em;
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0;
+                color: #777777;
+
+            }
+
+            .company-text-down dt {
+                width: 150px;
+            }
+
+            .company-text-down dd {
+                margin-bottom: .5rem;
+                margin-left: 0;
+                width: calc(100% - 150px);
+            }
+
+
+
+            .contact {
+                flex-direction: column-reverse;
+                background: #242c2e;
+                display: flex;
+
+            }
+
+            .contact-text {
+                width: 84.375%;
+                margin: 0 auto;
+                padding-top: 70px;
+                padding-bottom: 124px;
+                color: #ddd;
+            }
+
+            .contact-text-box {
+                width: 100%;
+            }
+
+            .contact h2 {
+                color: #ddd;
+                padding-bottom: 26px;
+                font-size: 18px;
+                letter-spacing: 0.2em;
+                font-family: "Karla", sans-serif;
+            }
+
+            .contact .ja {
+                font-size: 14px;
+                line-height: 2;
+                padding-bottom: 7px;
+                letter-spacing: 0.2em;
+                font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+
+            }
+
+            .contact .en {
+                padding-bottom: 32px;
+                font-size: 11px;
+                line-height: 2.5;
+                letter-spacing: 0.15em;
+            }
+
+            .contact dt {
+                padding-top: 16px;
+                font-family: "Karla", sans-serif;
+                color: #ddd;
+                font-size: 14px;
+            }
+
+            .contact dd {
+                border-bottom: 1px solid #3f4648;
+                padding-top: 30px;
+            }
+
+            .contact .submit {
+                padding-top: 36px;
+            }
+
+            .contact button {
+                width: 180px;
+                font-size: 13px;
+                letter-spacing: 0.2em;
+                color: #fff;
+                text-align: left;
+                font-family: "Karla", sans-serif;
+            }
+
+            .contact-img-pc {
+                display: none;
+            }
+
+            .contact-img-sp {
+                width: 100%;
+            }
+
+            .contact-img-sp img {
+                width: 100%;
+                height: auto;
+            }
+
+            .footer {
+                width: 100%;
+                height: 70px;
+                background-color: #373e40;
+            }
+
+            .footer p {
+                font-family: "Karla", sans-serif;
+                letter-spacing: 0.2em;
+                color: #ececec;
+                text-align: center;
+                /* line-height: 70PX; */
+                font-size: 12px;
+                transform: translateY(20PX);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-expand-sm  navbar-light navbar-fixed-top"
+        style="background-color: #ffffff;">
+        <div class="navbar-brand" href="#"><img src="./image/logo_row.png" alt=""></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link nav-linksm" href="#">
+                        TOP
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">WORKS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">COMPANY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ONLINE SHOP</a>
+                </li>
+                <li class="nav-item-xl">
+                    <a class="nav-link-xl" href="#"><img src="./image/11263.png" alt=""></a>
+                </li>
+                <li class="nav-item-xl">
+                    <a class="nav-link-xl" href="#"><img src="./image/566.png" alt=""></a>
+                </li>
+        </div>
+    </nav>
+    <div class="carouselExampleIndicators-xl">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./image/mainv1_pc.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/mainv2_pc.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/mainv3_pc.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="carouselExampleIndicators-sm">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./image/mainv1_sp.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/mainv2_sp.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/mainv3_sp.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="about-inne ">
+        <h2 class="about-title">ABOUT</h2>
+        <div class="about">
+
+            <div class="about-left">
+                <h3 class="left-top">
+                    自由で柔軟な視点で
+                    <br>
+                    伝統工芸の新たな可能性を探る
+                </h3>
+                <p class="left-down">
+                    楽芸工房は、京都・西陣で箔屋としての歴史を重ねてきた村田商店の直営工房・意匠部として平成元年に創業しました。長年、西陣織の特徴のひとつである引箔の製造を行ってきました。300年以上前に開発されたと言われているこの引箔による箔を織り込む技術を、楽芸工房は今もなお支え守り続けています。初代当主・村田輝義（２代目
+                    善右衛門）は世界に誇る西陣織の芸術性と高度な技術を継承する一方、伝統工芸の枠を超えた新たなモノづくりにも積極的に取り組みました。アート、デザイン、インテリア、ファッションなど、幅広いジャンルと接点をつくりながら、国内外のマーケットに向けて革新的なデザインを提案してきました。
+                </p>
+            </div>
+            <div class="about-right">
+                <h3 class="right-top">A free and flexible perspective.
+                    <br>
+                    Exploring New Possibilities for Traditional
+                    Crafts
+                </h3>
+                <p class="right-down">Rakgei Kobo was founded in 1989 as a direct-managed workshop and design
+                    department of
+                    Murata Shoten, a foil shop with a long history in Nishijin, Kyoto. Over the years, we have
+                    been
+                    manufacturing the traditional technique of "hikihaku", a speciality of Nishijin textile, and
+                    we
+                    continue
+                    to support and protect this technique of weaving foil, which is said to have been developed
+                    over 300
+                    years ago.
+                    <br>
+                    The founder, Teruyoshi Murata (the second generation Zenemon), inherited the artistry
+                    and
+                    advanced techniques of Nishijin-ori, a world-renowned craft of which he was the proud owner, while
+                    actively working to create new craftsmanship that transcended the boundaries of traditional
+                    craftwork.
+                    While creating contacts with a wide range of genres such as art, design, interior design, and
+                    fashion,
+                    he proposed innovative designs for the domestic and international market.
+
+                </p>
+            </div>
+        </div>
+        <div class="box1">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./image/slide1_1_pc.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/slide1_2_pc.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/slide1_3_pc.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/slide1_4_pc.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="box2">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./image/slide1_1_sp.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/slide1_2_sp.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/slide1_3_sp.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/slide1_4_sp.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="history">
+            <div class="history-up">
+                <h3 class="up-title">歴史を見つめ、未来を創造する</h3>
+                <p class="up-text">
+                    西陣織には1200年以上の歴史があります。完成までに必要な20以上もの工程それぞれを一人の職人が担当するという高度な分業によって支えられてきました。楽芸工房は、西陣織の技術を未来に繋ぐだけでなく、その技術をもとに現代生活に即した作品を創造し、新しい伝統を築くことを目指しています。
+                    <br>
+                    西陣織をはじめとする伝統産業の多くは、伝統と革新の響き合いによって様々な進化を遂げてきました。伝統工芸を中心に据え、多様なアイデアを織り込み、さらに深化させて次に繋いできたのです。新しいものを取り込んでも決して壊れないのが伝統の強さです。素材や道具、デザインが変わっても、工芸の本質だけは変わらず継承していく、これが未来の伝統に繋がっていくのではないでしょうか。
+
+                </p>
+            </div>
+            <div class="history-down">
+                <h3 class="down-title">Looking at history and creating the future</h3>
+                <p class="down-text">Nishijin-ori has a history of over 1200 years. It is supported by a sophisticated
+                    division
+                    of labor, with one artisan in charge of each of the more than 20 steps required for its completion.
+                    Rakugei Kobo not only aims to pass on the skills of Nishijin weaving to the future, but also to
+                    create
+                    works suited to modern life and to build a new tradition based on these skills.
+                    <br>
+                    Nishijin-ori and
+                    many
+                    other traditional industries have evolved in various ways due to the resonance of tradition and
+                    innovation. Weaving in a variety of ideas with traditional crafts at the center, we have deepened
+                    them
+                    and connected them to the next. The strength of tradition is that it never breaks down, even when
+                    new
+                    things are introduced. Even if the materials, tools, and designs change, the essence of the craft is
+                    still alive and well, and this is what will lead to the traditions of the future.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box-works">
+        <p>WORKS</p>
+    </div>
+
+    <div class="works">
+        <div class="works-text">
+            <div class="works-text-left">
+                <h3 class="left-top">引箔（平箔・柄箔・模様箔）とは
+                    <br>
+                    〜西陣織を支える名脇役〜
+                </h3>
+                <p class="left-down">
+                    西陣織の帯地の特徴である絢爛豪華な金・銀の輝きは、引箔によって表現されています。引箔は古来より、西陣織の中でも最高級品に用いられてきた材料の一つです。そしてそれを織物に織り込むための西陣織独自の伝統技法もまた「引箔技法」と呼びます。
+                </p>
+            </div>
+            <div class="works-text-right">
+                <h3 class="right-top">What is Hikihaku (foil seet, patterned foil )?
+                    <br>
+                    〜The supporting actors who
+                    support Nishijin-ori
+                </h3>
+                <p class="right-down">
+                    The lavish gold and silver shine of Nishijin-ori obi fabrics is expressed by the use of "hikihaku"
+                    (a
+                    traditional Japanese masking technique). hikihaku has been one of the most expensive materials used
+                    in
+                    Nishijinn weaving since ancient times. The traditional technique for weaving it into textiles is
+                    also
+                    called "hikihaku".
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="material-box">
+        <div class="material-text">
+            <h3 class="ja">
+                <span class="column">材</span>
+                <span class="column">料</span>
+                <span class="column top">(</span>
+                <span class="column ">素</span>
+                <span class="column ">材</span>
+                <span class="column bottom">）</span>
+            </h3>
+            <span class="en writing-vertical">material</span>
+        </div>
+
+        <div class="material-text1">
+            <h3 class="ja1">
+                <span class="column1">技</span>
+                <span class="column1">法</span>
+            </h3>
+            <span class="en1 writing-vertical">technique</span>
+        </div>
+
+        <div class="material-img">
+            <div class="material-img-img">
+                <img src="./image/material.jpg" alt="">
+            </div>
+            <div class="material-img-text">
+                <p class="material-text-top">
+                    伝統的な引箔は和紙の表面に接着剤として漆を塗り、金・銀箔を押し上げて（貼って）製作します。現在では金・銀箔だけでなく、様々な材料や道具を用いながら独自の模様を表現するのが主流です。これを専門の裁断所で一定の方向に髪の毛ほどの細さに裁断します。
+                </p>
+                <p class="material-text-down">
+                    Traditional "hikihaku" is made by applying lacquer as an adhesive to the surface of washi paper, and
+                    then pressing (or affixing) gold or silver foil to it. Nowadays, it is mainstream to express unique
+                    patterns using not only gold and silver leaf but also various materials and tools. These patterns
+                    are
+                    cut into hair-thin strips in certain directions at a specialized cutting room.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="technique-box">
+        <div class="technique-text">
+
+        </div>
+        <div class="technique-img">
+            <div class="technique-img-img">
+                <img src="./image/technique.jpg" alt="">
+            </div>
+            <div class="technique-img-text">
+                <p class="technique-text-top">
+
+                    織物は経糸（たていと）に緯糸（よこいと）を通して織り上げます。西陣織の特徴は、緯糸の代わりに裁断した引箔を織り込む「引箔技法」にあります。一本ずつ順番通りに織り込むことで、元の和紙に描いた模様が帯に再現されます。引箔は糸と違い表裏があるので、織り手が一本ずつヘラに引っ掛け、引っ張ることにより経糸の間を通します。この動作から引箔という名が生まれました。
+
+                </p>
+                <p class="technique-text-down">
+
+                    Weaving is done by passing a weft yarn through a warp yarn (warp threads) and a weft yarn (yokoito).
+                    Nishijin brocade is characterized by the "hikihaku" technique, in which cut pieces of foil are woven
+                    in place of the weft. By weaving each strand in sequence, the pattern drawn on the original Japanese
+                    paper is reproduced on the obi. Unlike yarn, Hifil has a front and back side, so the weaver hooks
+                    each
+                    strand on a spatula and pulls it through the warp threads by pulling. This action gives rise to the
+                    name "hikihaku".
+
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="box1-1">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./image/slide2_1_pc.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="box1-1-text">
+                            <div class="left">
+                                <h3 class="ja">01|製作</h3>
+                                <span class="en">Manufacturing</span>
+                            </div>
+                            <div class="right">
+                                <p class="ja">
+                                    目止めをした和紙（三椏・楮）の表面に色漆やラッカーなどで彩色します。そこに様々な伝統技法を用いて、金・銀・色箔・プラチナ箔・螺鈿などで柄付け・模様付けします。引箔は先染め糸だけでは表現できない豊かな質感と奥行きのあるデザインを可能にしました。
+                                </p>
+                                <p class="en">The surface of the paper (mitsumata or kozo) is then colored with colored
+                                    lacquer or
+                                    lacquer. Then, using various traditional techniques, patterns are applied with gold,
+                                    silver,
+                                    colored
+                                    foil, platinum foil, and raden, etc. Hikihaku allows us to create designs with rich
+                                    texture and
+                                    depth that cannot be expressed by yarn alone.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/slide2_2_pc.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="box1-1-text">
+                            <div class="left">
+                                <h3 class="ja">02|デザイン</h3>
+                                <span class="en">Design</span>
+                            </div>
+                            <div class="right">
+                                <p class="ja">
+                                    引箔で表現できるデザインは魅力的で、西陣織のベースとなる素材のひとつとして大変重用されてきました。箔屋は伝統的な製作技法をもとに、様々な独自の技法を編み出し進化してきました。これまで弊社がデザインした帯地の柄は３００種類以上にも及びます。
+                                </p>
+                                <p class="en">The designs that can be expressed with foil are fascinating and have been
+                                    highly
+                                    valued
+                                    as one of the base materials for Nishijin weaving. Based on traditional techniques,
+                                    we
+                                    at Hakuya
+                                    have developed a variety of unique techniques. We have designed more than 300
+                                    different
+                                    patterns
+                                    on
+                                    obi fabrics to date.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/slide2_3_pc.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="box1-1-text">
+                            <div class="left">
+                                <h3 class="ja">03|裁断</h3>
+                                <span class="en">Cutting</span>
+                            </div>
+                            <div class="right">
+                                <p class="ja">
+                                    髪の毛ほどの細さに裁断された状態の引箔。「切屋」と呼ばれる専門の職人が、ギロチン刃をセットした機械を用いて裁断します。切幅は細いもので約０.３㎜、太いもので約３㎜が一般的です。切幅によって織り上がる織物の風合いに違いが出ます。
+                                </p>
+                                <p class="en">Hikifo is cut to hair-thin lengths. A specialized artisan called a
+                                    "Kiriya"
+                                    cuts them
+                                    using a machine with a guillotine blade. Generally, the width of the cut is about
+                                    0.3 mm
+                                    for thin
+                                    items and about 3 mm for thick items. The texture of the woven fabric differs
+                                    according
+                                    to the
+                                    width
+                                    of the cut.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/slide2_4_pc.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="box1-1-text">
+                            <div class="left">
+                                <h3 class="ja">04|織り込み</h3>
+                                <span class="en">Interweaving</span>
+                            </div>
+                            <div class="right">
+                                <p class="ja">
+                                    裁断された引箔は、職人の手によって一本ずつ織り込まれます。順番通りに織り込むことで元の和紙に描いた模様が織物に再現されます。「引箔」と言う名は、職人が箔糸を織り込む時に一本ずつ丁寧にヘラに引っ掛け、引っ張る動作から生まれました。
+                                </p>
+                                <p class="en">The cut pieces of foil are woven in one by one by a craftsman. By weaving
+                                    them in the
+                                    order in which they are woven, the pattern drawn on the original Japanese paper is
+                                    reproduced on
+                                    the
+                                    fabric. The name "hakuhiki" comes from the action of the artisan who carefully hooks
+                                    and pulls
+                                    each
+                                    strand of foil thread onto the spatula as it is woven.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/slide2_5_pc.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="box1-1-text">
+                            <div class="left">
+                                <h3 class="ja">05|帯</h3>
+                                <span class="en">Strip</span>
+                            </div>
+                            <div class="right">
+                                <p class="ja">
+                                    引箔は、特に刺繡帯地の地模様として重用されてきました。そのため引箔は単独で柄を表現するものではなく、織物の柄を効果的にするための脇役でなければなりません。「高い値打ちをつける、貫禄が増す」などの意味表現で用いられる“箔が付く”という言い回しは、この引箔から生まれた言葉です。
+                                </p>
+                                <p class="en">The use of backing foil has been particularly valued in the production
+                                    of embroidery
+                                    strips, and for this reason, it is not a stand-alone item, but must play a
+                                    supporting role in the
+                                    effectiveness of the fabric's patterns. Therefore, it does not stand alone as a
+                                    pattern, but has
+                                    to
+                                    play a supporting role in making the fabric pattern more effective. This is the
+                                    origin of the
+                                    phrase
+                                    "foliage" which is used to describe the "high value" and "dignity" of a fabric.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="box2-2">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./image/slide2_1_sp.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/slide2_2_sp.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/slide2_3_sp.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/slide2_4_sp.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/slide2_5_sp.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="box2-2-carousel">
+        <div class="carousel-title">
+            <p class="carousel-title-top">01|製作</p>
+            <p class="carousel-title-down">Manufacturing</p>
+        </div>
+        <div class="carousel-text">
+            <p class="carousel-text-top">
+                目止めをした和紙（三椏・楮）の表面に色漆やラッカーなどで彩色します。そこに様々な伝統技法を用いて、金・銀・色箔・プラチナ箔・螺鈿などで柄付け・模様付けします。引箔は先染め糸だけでは表現できない豊かな質感と奥行きのあるデザインを可能にしました。
+            </p>
+            <p class="carousel-text-down">The surface of the paper (mitsumata or kozo) is then colored with colored
+                lacquer or
+                lacquer. Then, using various traditional techniques, patterns are applied with gold,
+                silver,
+                colored
+                foil, platinum foil, and raden, etc. Hikihaku allows us to create designs with rich
+                texture and
+                depth that cannot be expressed by yarn alone.</p>
+        </div>
+    </div>
+
+    <div class="section works2">
+        <div class="img-box">
+            <div class="picture-1">
+                <div class="picture-1-text"></div>
+                <div class="picture-img">
+                    <div class="img-1">
+                        <img src="./image/original_bland.jpg" alt="">
+                    </div>
+                    <p class="ja">伝統工芸のさらなる可能性を追求する楽芸工房のオリジナルブランド</p>
+                </div>
+                <h4 class="en">VIEW MORE</h4>
+            </div>
+            <div class="picture-2">
+                <div class="picture-2-1">
+                    <div class="picture-2-box">
+                        <div class="onlineshop-box">
+                            <button class="onlineshop-button">ONLINE SHOP</button>
+                        </div>
+                        <img src="./image/onlineshop2.jpg" alt="">
+                    </div>
+                    <div class="picture-2-shopbag"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="picture-3">
+            <div class="picture-3-box">
+                <img src="./image/img1.jpg" alt="">
+            </div>
+        </div>
+        <div class="picture-4">
+            <div class="picture-4-box">
+                <img src="./image/img2.jpg" alt="">
+            </div>
+        </div>
+        <div class="picture-5">
+            <div class="picture-4-box">
+
+                <img class="picture-5-2" src="./image/img4.jpg" alt="">
+                <img class="picture-5-1" src="./image/img3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="company">
+        <div class="company-img-big">
+            <!-- <img src="./image/company_dummy.png" alt=""> -->
+            <div class="company-img-sm">
+                <div class="left">
+                    <img src="./image/company1.jpg" alt="">
+                    <div class="name">
+                        <p class="en">Teruyoshi MURATA</p>
+                        <p class="ja">村田輝義</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="./image/company2.jpg" alt="">
+                    <div class="name">
+                        <p class="en">Kohei MURATA</p>
+                        <p class="ja">村田紘平</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="company-text">
+            <div class="company-text-box">
+                <h2 class="company-title">COMPANY</h2>
+                <dl class="company-text-top">
+                    <dt>会社名</dt>
+                    <dd>有限会社 楽芸工房</dd>
+                    <dt>代表取締役</dt>
+                    <dd>村田　輝義</dd>
+                    <dt>TEL･FAX</dt>
+                    <dd>077-534-5024</dd>
+                    <dt>E-mail</dt>
+                    <dd>rakugei＠sky.plala.or.jp</dd>
+                    <dt>所在地</dt>
+                    <dd>〒520-0861<br>滋賀県大津市石山寺三丁目14番1号</dd>
+                </dl>
+                <dl class="company-text-down">
+                    <dt>Name</dt>
+                    <dd>RAKUGEIKOBO,inc.</dd>
+                    <dt>CEO</dt>
+                    <dd>Teruyoshi MURATA</dd>
+                    <dt>TEL･FAX</dt>
+                    <dd>＋81-77-534-5024</dd>
+                    <dt>E-mail</dt>
+                    <dd>rakugei＠sky.plala.or.jp</dd>
+                    <dt>Address</dt>
+                    <dd>〒520-3-14-1, Ishiyamadera, Otsu Shi, Shiga Ken,<br>520-0861, Japan</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="contact-text">
+            <div class="contact-text-box">
+                <h2 class="contact-title">CONTACT</h2>
+                <p class="ja">下記フォームより必要事項を記入いただきSendボタンを押してください。</p>
+                <p class="en">Please fill in the necessary information on the form and press the send button.</p>
+                <div class="contact-qa">
+                    <form method="POST" action="/form/mail-contact.php" enctype="multipart/form-data">
+                        <dl class="form-block lead-next">
+                            <dt class="font-en"><label>Name</label><span class="required">※required</span></dt>
+                            <dd></dd>
+                            <dt class="font-en"><label>E-mail</label><span class="required">※required</span></dt>
+                            <dd></dd>
+                            <dt class="font-en"><label>Phone Number</label><span class="required">※required</span></dt>
+                            <dd></dd>
+                            <dt class="font-en message-title"><label>Message</label><span
+                                    class="required">※required</span>
+                            </dt>
+                            <dd class="message"></dd>
+                        </dl>
+                        <div class="submit">
+                            <button type="submit" class="font-en link link-common large contact">CONFIRM</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="contact-img-pc">
+            <img src="./image/contact_pc.jpg" alt="">
+        </div>
+        <div class="contact-img-sp">
+            <img src="./image/contact_sp.jpg" alt="">
+        </div>
+    </div>
+    <div class="footer">
+        <p>COPYRIGHT©RAKUGEIKOBO,inc.ALL RIGHTS RESERVED.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
